@@ -19,4 +19,6 @@ import App from './components/App'
 // // createRoot()contrôle le contenu du nœud de conteneur que vous transmettez. 
 // //Tous les éléments DOM existants à l'intérieur sont remplacés lorsque render est appelé. 
 // //Les appels ultérieurs utilisent l'algorithme de différenciation DOM de React pour des mises à jour efficaces.
- ReactDOM.render(<App/>, document.getElementById('root'));
+ ReactDOM.render(<App />, document.getElementById('root'));
+
+ export default App;
