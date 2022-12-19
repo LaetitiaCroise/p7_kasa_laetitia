@@ -5,7 +5,7 @@ function A_propos() {
 	return (
 	<>
 		<div className='aProposKasa'>
-			{/* <img src={imgAproposKasa} alt='Un paysage montagneux' className='imgAproposKasa' /> */}
+			
 		</div>
 		<main className="accordions">
 		<Accordion

@@ -7,6 +7,7 @@ import Slideshow from "../components/FicheLogement/Slideshow";
 import Cart from '../components/Cart/Cart'
 import APropos from '../components/aPropos/APropos'
 
+// Création du router 
 const Router = () => {
     return (
         <BrowserRouter>
