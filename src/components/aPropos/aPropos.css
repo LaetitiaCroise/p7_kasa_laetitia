@@ -1,0 +1,34 @@
+.aProposKasa {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    width: 90%;
+    max-width: 1240px;
+    height: 223px;
+    background: url('../../assets/d_a-propos_Kasa.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 799px){
+    .aProposKasa {
+        background: url('../../assets/m_a-propos_Kasa.png');
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+}

@@ -1,0 +1,78 @@
+* {
+    font-family: "Montserrat";
+}
+
+.kasaBanner {
+    color: black;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px;
+}
+
+.logoKasa {
+    height: 68px;
+}
+
+.kasaBanner a {
+	list-style-type: none;
+}
+
+.kasa-title {
+	padding-left: 32px;
+}
+
+.HeaderMenu {
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+}
+
+.HeaderMenu a {
+	height: 34px;
+	width: 136px;
+    text-decoration: none;
+    color:#FF6060;
+}
+
+.HeaderMenu a :hover{
+	border-bottom: 3px solid #FF6060;
+}
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 799px){
+
+    .sectionSlider {
+        margin: 0 auto;
+    }
+    
+    .kasaBanner {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .logoKasa {
+        width: 125px;
+        height: 42px;
+    }
+
+    .HeaderMenu {
+        width: 160px;
+        font-size: 18px;
+    }
+
+    .HeaderMenu a {
+        width: 100%;
+        height: 15px;
+    }
+
+    .HeaderMenu a :hover {
+        border-bottom: 1px solid #FF6060;
+    }
+}

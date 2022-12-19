@@ -1,0 +1,16 @@
+.kasa-Footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.logo_Kasa_Footer {
+    filter: brightness(5);
+    width: 120px;
+    padding: 40px;
+}
+.kasa-footer-elem {
+	color: white;
+}
