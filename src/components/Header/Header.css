@@ -59,13 +59,15 @@
     }
 
     .logoKasa {
-        width: 125px;
-        height: 42px;
+        width: 105px;
+        height: 35px;
     }
 
     .HeaderMenu {
-        width: 160px;
+        width: 170px;
         font-size: 18px;
+        margin: 0;
+        padding: 0;
     }
 
     .HeaderMenu a {
