@@ -19,3 +19,8 @@
         margin-top:230px;
     }
 }
+@media (max-width: 499px){
+    .kasa-Footer{
+        margin-top: 0;
+    }
+}

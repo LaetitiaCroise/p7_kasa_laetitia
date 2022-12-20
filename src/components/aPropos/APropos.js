@@ -1,9 +1,11 @@
 import './aPropos.css'
 import Accordion from './Accordion';
+import React from 'react';
 
-function A_propos() {
+function A_propos() { // je crée ma fonction qui va retournée des Fragments pour mon composant aProposKasa et accordions qui va me permettre
+	//de grouper une liste d'enfants sans ajouter de noeud supplémentaire dans le DOM
 	return (
-	<>
+	<React.Fragment>
 		<div className='aProposKasa'>
 			
 		</div>
@@ -25,7 +27,7 @@ function A_propos() {
 			content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
 		/>
 		</main>
-		</>
+		</React.Fragment>
 	);
 }
 
