@@ -14,3 +14,8 @@
 .kasa-footer-elem {
 	color: white;
 }
+@media (max-width: 799px),(min-width: 820px){
+    .kasa-Footer{
+        margin-top:230px;
+    }
+}
