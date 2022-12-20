@@ -28,8 +28,7 @@ function FicheLogement({ title, content }) {
         return null;
     });
     }, [id]);
-
-    ////////////////--  si l'id n'existe pas (titre inéxistant) alors go to 404  --////////////////
+//////--  si l'id n'existe pas (titre inéxistant) alors erreur 404  --////
     if (logement.title === undefined) {
         return <Error />;
     }
