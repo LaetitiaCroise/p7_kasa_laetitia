@@ -69,7 +69,8 @@ function Slideshow() {
                             style={{
                                 backgroundImage: `url(${(logement.pictures[index])})`
                             }}>
-                                <FiChevronLeft className={chevronOrNot} onClick={prevSlide}/>
+                                
+                                <FiChevronLeft className={chevronOrNot} onClick={prevSlide}/> 
                                 {index=== current && (
                                     <span className={slideNumberOrNot}>
                                         {current +1}/{length}
