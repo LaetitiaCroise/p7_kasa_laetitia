@@ -15,7 +15,8 @@ function Accordion_Logement({ title, content }) {
     };
     return (
     <div className={`AccordionLogement ${isActive && "active"}`}>
-        <div className="accordionTitle" onClick={handleToggle}>
+        
+        <div className="accordionTitle" onClick={handleToggle}> 
             {title} <div>{chevron}</div>
         </div>
         <div className="accordionContent">{content}</div>
@@ -27,3 +28,5 @@ export default Accordion_Logement;
 
 // Il est important de préciser une valeur initiale dans votre state ça peut etre une string, un booléen, un tableau ou encore un objet avec plusieurs propriétés.
 // Sinon, elle sera undefined par défaut
+
+

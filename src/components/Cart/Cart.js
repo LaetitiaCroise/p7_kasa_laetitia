@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Cart() {
+function Cart() { // je crée ma function Cart qui retourne la section Gallery , la banner background Image et les carts ( gallery images)
 
     return (
         <section className="Gallery">

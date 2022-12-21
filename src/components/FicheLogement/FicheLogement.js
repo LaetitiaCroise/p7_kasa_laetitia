@@ -1,5 +1,6 @@
 import data from "../../data/logement_data.json";
 import { useParams } from "react-router-dom";
+// j'importe React l'effet de bord et le Hook { usEffect, useState} dans React
 import React, { useEffect, useState } from "react";
 import "./FicheLogement.css";
 import AccordionLogement from "./AccordionLogement";
@@ -10,7 +11,7 @@ import Tags from './Tags';
 // le créé ma fonction FicheLogement et récupère toutes les information du json à partir de l'id qui est dans l'URL avec useParams
 function FicheLogement({ title, content }) {
 
-    const [logement, setLogement] = useState({
+    const [isLogement, setLogement] = useState({
     tags: [],
     equipments: [],
     pictures: [],
@@ -19,7 +20,7 @@ function FicheLogement({ title, content }) {
     });
     const { id } = useParams();
 
-    // je configure la constante logement avec les datas qui ont le même id que dans l'URL
+    // je configure la constante isLogement avec les datas qui ont le même id que dans l'URL
     useEffect(() => {
     data.map((house) => {
         if (house.id === id) {
@@ -29,24 +30,24 @@ function FicheLogement({ title, content }) {
     });
     }, [id]);
 //////--  si l'id n'existe pas (titre inéxistant) alors erreur 404  --////
-    if (logement.title === undefined) {
+    if (isLogement.title === undefined) {
         return <Error />;
     }
 
     ////////////////--    --////////////////
     ////////////////--    --////////////////
+//  pour chaque logement j'appelle mon fichier JSON
+    const logementDescription = isLogement.description;
+    const logementTitle = isLogement.title;
+    const logementEquipments = isLogement.equipments;
+    const logementLocation = isLogement.location
+    const logementHostName = isLogement.host.name;
+    const logementHostPicture = isLogement.host.picture;
+    const logementRating = isLogement.rating //quantité étoiles 
 
-    const logementDescription = logement.description;
-    const logementTitle = logement.title;
-    const logementEquipments = logement.equipments;
-    const logementLocation = logement.location
-    const logementHostName = logement.host.name;
-    const logementHostPicture = logement.host.picture;
-    const logementRating = logement.rating
-
-    ////////////////--  map() des équipements sur logement.equipement du logement en question [index]  --////////////////
+    // map( 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur isLogement.equipement du logement en question [index] //
     let mapLogementEquipement = logementEquipments.map((l, index) => (
-        <p className="pEquipementLogement" key={l}>{logement.equipments[index]}</p>
+        <p className="pEquipementLogement" key={l}>{isLogement.equipments[index]}</p>
     ))
 
     ////////////////--  return()  --////////////////
@@ -60,7 +61,7 @@ function FicheLogement({ title, content }) {
                     <h1>{logementTitle}</h1>
                     <h2>{logementLocation}</h2>
                     <div className="tagsContainer">
-                        <Tags logement={logement} />
+                        <Tags logement={isLogement} />
                     </div>
                 </div>
 
@@ -81,7 +82,7 @@ function FicheLogement({ title, content }) {
 
             </figure>
 
-            {/* je donne à AccordionLogement le title et le content necessaire */}
+            {/* je donne à AccordionLogement le title et le content necessaire pour l'affichage */}
             <div className="AccordionLogement">
                 <AccordionLogement  
                     title="Description" 
@@ -98,3 +99,4 @@ function FicheLogement({ title, content }) {
     }
 
 export default FicheLogement;
+
