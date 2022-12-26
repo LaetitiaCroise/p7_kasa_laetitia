@@ -11,7 +11,7 @@ import Tags from './Tags';
 // le créé ma fonction FicheLogement et récupère toutes les information du json à partir de l'id qui est dans l'URL avec useParams
 function FicheLogement({ title, content }) {
 
-    const [isLogement, setLogement] = useState({
+    const [logement, setLogement] = useState({
     tags: [],
     equipments: [],
     pictures: [],
@@ -30,24 +30,24 @@ function FicheLogement({ title, content }) {
     });
     }, [id]);
 //////--  si l'id n'existe pas (titre inéxistant) alors erreur 404  --////
-    if (isLogement.title === undefined) {
+    if (logement.title === undefined) {
         return <Error />;
     }
 
     ////////////////--    --////////////////
     ////////////////--    --////////////////
 //  pour chaque logement j'appelle mon fichier JSON
-    const logementDescription = isLogement.description;
-    const logementTitle = isLogement.title;
-    const logementEquipments = isLogement.equipments;
-    const logementLocation = isLogement.location
-    const logementHostName = isLogement.host.name;
-    const logementHostPicture = isLogement.host.picture;
-    const logementRating = isLogement.rating //quantité étoiles 
+    const logementDescription = logement.description;
+    const logementTitle = logement.title;
+    const logementEquipments = logement.equipments;
+    const logementLocation = logement.location
+    const logementHostName = logement.host.name;
+    const logementHostPicture = logement.host.picture;
+    const logementRating = logement.rating //quantité étoiles 
 
-    // map( 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur isLogement.equipement du logement en question [index] //
+    // map( 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur logement.equipement du logement en question [index] //
     let mapLogementEquipement = logementEquipments.map((l, index) => (
-        <p className="pEquipementLogement" key={l}>{isLogement.equipments[index]}</p>
+        <p className="pEquipementLogement" key={l}>{logement.equipments[index]}</p>
     ))
 
     ////////////////--  return()  --////////////////
@@ -61,7 +61,7 @@ function FicheLogement({ title, content }) {
                     <h1>{logementTitle}</h1>
                     <h2>{logementLocation}</h2>
                     <div className="tagsContainer">
-                        <Tags logement={isLogement} />
+                        <Tags logement={logement} />
                     </div>
                 </div>
 
