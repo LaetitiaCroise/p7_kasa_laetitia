@@ -2,7 +2,7 @@ import React from "react";
 import Star from '../../assets/Star.png'
 import StarEmpty from '../../assets/StarEmpty.png';
 
-// je récupère logement en créant la fonction  Rate avec le paramètre "logement" pour récuperer ensuite son ratonScore allant de 1 à 5 (étoiles)
+// je récupère lo en créant la fonction  Rate avec en paramètre "logement" pour récuperer ensuite son ratonScore allant de 1 à 5 (étoiles)
 function Rate({ logement }) {
 const ratingScore = [1, 2, 3, 4, 5]
 return (
