@@ -18,3 +18,4 @@ function Banner() {
 }
 
 export default Banner
+// J'utilise un Link qui viens de react Router  et se comporte comme une Balise anchor qui va permettre de faire le lien entre les pages   (important pour l'accesibilité)

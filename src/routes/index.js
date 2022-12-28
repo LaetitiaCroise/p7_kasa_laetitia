@@ -6,8 +6,9 @@ import FicheLogement from '../components/FicheLogement/FicheLogement';
 import Slideshow from "../components/FicheLogement/Slideshow";
 import Cart from '../components/Cart/Cart'
 import APropos from '../components/aPropos/APropos'
+import React from "react";
 
-// Création du router 
+// Découpage du router 
 const Router = () => {
     return (
         <BrowserRouter>
@@ -17,10 +18,10 @@ const Router = () => {
                     <Route path="/" element={<Cart />} />
                     <Route path="/ficheLogement/:id" element=
                     {
-                        <>
+                        <React.Fragment>
                             <Slideshow />
                             <FicheLogement />
-                        </>
+                        </React.Fragment>
                     } 
                     />
                     <Route path="/aPropos" element={<APropos />} />

@@ -8,7 +8,7 @@ function Accordion({ title, content }) {
   //useState est false initialement
   const [active, setActive] = useState(false);
 
-  const handleToggle = (e) => {
+  const handleToggle = (evnt) => {
     // Si "active" est différent de false, la classe s'active
     setActive(!active);
   };
