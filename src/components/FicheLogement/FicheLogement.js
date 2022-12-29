@@ -20,15 +20,16 @@ function FicheLogement({ title, content }) {
     });
     const { id } = useParams();
 
-    // je configure la constante  avec les datas qui ont le même id que dans l'URL
+    // j'excute avec useEffect le code une fois que le site va être charger 
     useEffect(() => { 
-    data.map((house) => { // récupère les datas et les tranforme en liste de composant (id) dans un tableau
-        if (house.id === id) {
-        setLogement(house);
+    data.map((house) => {  // je boucle ma data pour obtenir house 
+        if (house.id === id) { // je passe la conditions  si id de house est strctement egale à l'id de mon parametre Use params
+        setLogement(house);// si c'est ok setLogement( useState) recupère toute les données de house
         }
         return null;
     });
-    }, [id]);
+    }, [id]); // garde en paramettre l'id 
+
 //////--  si l'id n'existe pas (titre inéxistant) alors erreur 404  --////
     if (logement.title === undefined) {
         return <Error />;
@@ -44,9 +45,9 @@ function FicheLogement({ title, content }) {
     const logementHostPicture = logement.host.picture;
     const logementRating = logement.rating //quantité étoiles 
 
-    // map 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur logement.equipement du logement en question [index] //
-    let mapLogementEquipement = logementEquipments.map((l, index) => (
-        <p className="pEquipementLogement" key={l}>{logement.equipments[index]}</p>
+    // map 1ogement valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur logement.equipement du logement en question [index] //
+    let mapLogementEquipement = logementEquipments.map((logement, index) => (
+        <p className="pEquipementLogement" key={logement}>{logement.equipments[index]}</p>
     ))
 
 ///--  return()  --///

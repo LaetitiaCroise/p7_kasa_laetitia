@@ -5,6 +5,9 @@ import React from "react";
 function A_propos() {
   // je crée ma fonction qui va retournée des Fragments pour mon composant A_ProposKasa et accordions qui va me permettre
   //de grouper une liste d'enfants sans ajouter de noeud supplémentaire dans le DOM
+
+
+  //  je recupere mes props { title , content} pour géré l'affichage de mes composant 
   return (
     <React.Fragment>
       <div className="aProposKasa"></div>

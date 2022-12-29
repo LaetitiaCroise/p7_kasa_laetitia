@@ -8,25 +8,25 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 // je créé ma fonction FicheLogement et récupère toutes les information du json à partir de l'id qui est dans l'URL avec useParams
 function Slideshow() {
-  const [logement, setLogement] = useState({
-    tags: [],
-    equipments: [],
-    pictures: [],
-    rating: "",
-    host: { name: "", picture: "" },
-  });
-
-  const { id } = useParams();
-  // je configure la constante avec les datas qui ont le même id que dans l'URL
-  useEffect(() => {
-    // // récupère les datas et les tranforme en liste de composant (id) dans un tableau
-    data.map((house) => {
-      if (house.id === id) {
-        setLogement(house);
-      }
-      return null;
-    });
-  }, [id]);
+    const [logement, setLogement] = useState({ 
+        tags: [],
+        equipments: [],
+        pictures: [],
+        rating: "",
+        host: { name: "", picture: "" },
+        });
+        const { id } = useParams();
+    
+        // j'excute avec useEffect le code une fois que le site va être charger 
+        useEffect(() => { 
+        data.map((house) => {  // je boucle ma data pour obtenir house 
+            if (house.id === id) { // je passe la conditions  si id de house est strctement egale à l'id de mon parametre Use params
+            setLogement(house);// si c'est ok setLogement( useState) recupère toute les données de house
+            }
+            return null;
+        });
+        }, [id]); // garde en paramettre l'id 
+  
 
   ////////CURRENT-IMAGE//////////
 
@@ -41,7 +41,7 @@ function Slideshow() {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  // si aucun clique il ne se passe rien
+  // si pas d'image sur le logement alors il est null
   if (logement.pictures.length <= 0) {
     return null;
   }
@@ -59,8 +59,8 @@ function Slideshow() {
   return (
     <section className="sectionSlider">
       <div className="slider">
-        {/* je boucle sur les photos du logement pour afficher l'image avec l'index qui équivault à current */}
-        {logement.pictures.map((l, index) => {
+        {/* je boucle avec map sur les photos du logement pour afficher l'image avec l'index qui équivault à current */}
+        {logement.pictures.map((logement, index) => {
           return (
             <div
               className={index === current ? "slide active" : "slide"}

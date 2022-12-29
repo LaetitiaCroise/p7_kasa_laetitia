@@ -1,10 +1,10 @@
-import './Cart.css'
+import './Cards.css'
 import LogementData from '../../data/logement_data.json'
 import PartoutKasa from '../../assets/Partout_Kasa.png'
 import { Link } from 'react-router-dom';
 
 
-
+// mettre à jour cart en cards
 function Cart() { // je crée ma function Cart qui retourne la section Gallery , la banner background Image et les carts ( gallery images)
 
     return (
@@ -17,17 +17,18 @@ function Cart() { // je crée ma function Cart qui retourne la section Gallery ,
                 </div>
             </div>
                 <div className='galleryImage'>
-                    {/* je boucle pour créer une fiche clickable pour chaque id sur logementData et je met un key unique*/}
-                    {LogementData.map((l) => (
-                    // le <Link> envoie vers la page logement du produit avec le bon ID (/ficheLogement/${l.id})
-                    <Link key={l.id} to={`/ficheLogement/${l.id}`}>
+                    {/* je boucle avec map pour créer une fiche cliquable pour chaque id sur logementData et je met un key unique*/}
+                    {LogementData.map((logement) => (
+                    // le <Link> envoie vers la page logement du produit avec le bon ID coresspondant au logement en question (/ficheLogement/${logement.id})
+                    <Link key={logement.id} to={`/ficheLogement/${logement.id}`}>
+
                         <div className="boxKey" 
-                        // le mets la propriété css pour que l'image (l.cover) soit sur le même plan que le linear-gradient
+                        // le mets la propriété css pour que l'image (logement.cover) soit sur le même plan que le linear-gradient
                         style={{
                             backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
-                            url(${(l.cover)})`
+                            url(${(logement.cover)})`
                         }}>
-                            <p className="boxTitre">{l.title}</p>
+                            <p className="boxTitre">{logement.title}</p>
                         </div>
                     </Link>
                     ))}

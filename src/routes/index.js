@@ -4,7 +4,7 @@ import LayoutDefault from '../layouts/Default';
 import Error404 from '../components/Error/Error';
 import FicheLogement from '../components/FicheLogement/FicheLogement';
 import Slideshow from "../components/FicheLogement/Slideshow";
-import Cart from '../components/Cart/Cart'
+import Cart from '../components/Cart/Cards'
 import APropos from '../components/aPropos/APropos'
 import React from "react";
 
@@ -12,7 +12,7 @@ import React from "react";
 const Router = () => {
     return (
         //  je gere le rendu avec BrowserRouter et Route pour l'affichage de mes differentes pages
-        <BrowserRouter>
+        <BrowserRouter> 
             <Routes>
 
                 <Route element={<LayoutDefault />}>
@@ -28,8 +28,8 @@ const Router = () => {
                     <Route path="/aPropos" element={<APropos />} />
                 </Route>
                 
-                <Route element={<LayoutBlank/>}>
-                    <Route path="*" element={<Error404/>}/>
+                <Route element={<LayoutBlank />}>
+                    <Route path="*" element={<Error404 />}/>
                 </Route>
 
             </Routes>
@@ -39,4 +39,4 @@ const Router = () => {
 
 export default Router;
 
-// 
+// BrowserRouter element principal pour le router 
