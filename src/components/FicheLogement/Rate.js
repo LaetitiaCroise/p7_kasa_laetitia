@@ -29,4 +29,8 @@ return (
 )
 }
 
+
 export default Rate;
+
+
+

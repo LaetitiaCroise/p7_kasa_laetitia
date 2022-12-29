@@ -1,6 +1,7 @@
 import './Slideshow.css'
 import React, {useEffect, useState} from 'react'
 import data from '../../data/logement_data'
+// j'utilise le snippets de code qui combine mes parametre passées dans l'url
 import {useParams} from 'react-router-dom'
 import 'react-slideshow-image/dist/styles.css'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";

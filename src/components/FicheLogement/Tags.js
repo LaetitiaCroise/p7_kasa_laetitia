@@ -1,14 +1,13 @@
 import React from 'react';
 
 
-//je prépage pa fonction Tag pour l'importer dans FicheLogement
+//je prépage ma fonction Tag pour l'importer dans FicheLogement
+
 function Tag({ logement }) {
-
-    const tag = logement.tags;
-    const tagMap = tag.map((e, index) => (
-        <p className="tagParagraphe" key={e}>{logement.tags[index]}</p>
-    ));
-    return <div className="tag">{tagMap}</div>;
+    return (
+        <div className="tag">
+            <p className="tag-content">{logement.content}</p>
+        </div>
+    )
 }
-
-export default Tag;
+export default Tag

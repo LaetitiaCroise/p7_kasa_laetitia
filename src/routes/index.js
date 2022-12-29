@@ -11,6 +11,7 @@ import React from "react";
 // Découpage du router 
 const Router = () => {
     return (
+        //  je gere le rendu avec BrowserRouter et Route pour l'affichage de mes differentes pages
         <BrowserRouter>
             <Routes>
 
@@ -26,7 +27,7 @@ const Router = () => {
                     />
                     <Route path="/aPropos" element={<APropos />} />
                 </Route>
-
+                
                 <Route element={<LayoutBlank/>}>
                     <Route path="*" element={<Error404/>}/>
                 </Route>
@@ -37,3 +38,5 @@ const Router = () => {
 };
 
 export default Router;
+
+// 

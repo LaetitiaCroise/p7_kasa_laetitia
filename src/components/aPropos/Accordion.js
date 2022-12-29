@@ -9,11 +9,11 @@ function Accordion({ title, content }) {
   const [active, setActive] = useState(false);
 
   const handleToggle = (evnt) => {
-    // Si "active" est différent de false, la classe s'active
+    // Si "active" est différent de false, return la class "active"
     setActive(!active);
   };
   return (
-    //si active est vrai, la classe est active
+    //si active est vrai, alors 
     <div className={`accordion ${active && "active"}`}>
       <div className="accordionTitle" onClick={handleToggle}>
         {title} <div>{chevron}</div>
