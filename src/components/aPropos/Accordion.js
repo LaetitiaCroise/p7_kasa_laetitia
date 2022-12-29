@@ -1,4 +1,4 @@
-import './Accordion.css'
+import "./Accordion.css";
 import { useState } from "react";
 import React from "react";
 const chevron = <i className="fa-solid fa-chevron-up"></i>;
@@ -13,7 +13,7 @@ function Accordion({ title, content }) {
     setActive(!active);
   };
   return (
-    //si active est vrai, alors 
+    //si active est vrai, alors
     <div className={`accordion ${active && "active"}`}>
       <div className="accordionTitle" onClick={handleToggle}>
         {title} <div>{chevron}</div>

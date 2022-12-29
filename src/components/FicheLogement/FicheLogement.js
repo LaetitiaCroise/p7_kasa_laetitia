@@ -8,10 +8,10 @@ import Error from '../Error/Error';
 import Rate from './Rate';
 import Tags from './Tags';
 
-// le créé ma fonction FicheLogement et récupère toutes les information du json à partir de l'id qui est dans l'URL avec useParams
+// je créé ma fonction FicheLogement et récupère toutes les information du json à partir de l'id qui est dans l'URL avec useParams
 function FicheLogement({ title, content }) {
 
-    const [logement, setLogement] = useState({
+    const [logement, setLogement] = useState({ 
     tags: [],
     equipments: [],
     pictures: [],
@@ -20,9 +20,9 @@ function FicheLogement({ title, content }) {
     });
     const { id } = useParams();
 
-    // je configure la constante isLogement avec les datas qui ont le même id que dans l'URL
-    useEffect(() => {
-    data.map((house) => {
+    // je configure la constante  avec les datas qui ont le même id que dans l'URL
+    useEffect(() => { 
+    data.map((house) => { // récupère les datas et les tranforme en liste de composant (id) dans un tableau
         if (house.id === id) {
         setLogement(house);
         }
@@ -34,8 +34,7 @@ function FicheLogement({ title, content }) {
         return <Error />;
     }
 
-    ////////////////--    --////////////////
-    ////////////////--    --////////////////
+   
 //  pour chaque logement j'appelle mon fichier JSON
     const logementDescription = logement.description;
     const logementTitle = logement.title;
@@ -45,12 +44,12 @@ function FicheLogement({ title, content }) {
     const logementHostPicture = logement.host.picture;
     const logementRating = logement.rating //quantité étoiles 
 
-    // map( 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur logement.equipement du logement en question [index] //
+    // map 1 valeur et l'index qui retourne dont l'attribue key est 1) revoie des équipements sur logement.equipement du logement en question [index] //
     let mapLogementEquipement = logementEquipments.map((l, index) => (
         <p className="pEquipementLogement" key={l}>{logement.equipments[index]}</p>
     ))
 
-    ////////////////--  return()  --////////////////
+///--  return()  --///
     return (
         <section>
             
