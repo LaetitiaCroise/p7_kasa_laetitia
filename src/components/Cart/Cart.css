@@ -85,7 +85,7 @@
 
 	.galleryImage {
 		background-color: white;
-		margin: 20px 0;
+		margin: 0;
 	}
 
     .galleryImage a {
@@ -95,9 +95,12 @@
 	}
 
 	.sectionP p {
-		font-size:  24px;
+		font-size:  22px;
 		height: 111px;
 		margin: 0 auto;
 	}
+    .kasa-Body{
+        width: 95%;
+    }
 
 }
