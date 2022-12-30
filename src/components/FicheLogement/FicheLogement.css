@@ -84,7 +84,7 @@
 
     .tag{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .infoLogement {
@@ -105,7 +105,7 @@
     }
     
     .tagParagraphe {
-        font-size: 10px;
+        font-size: 9px;
         border-radius: 5px;
         margin-bottom: 10px;
     
