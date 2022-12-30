@@ -16,6 +16,7 @@ const Router = () => {
             <Routes>
 
                 <Route element={<LayoutDefault />}>
+
                     <Route path="/" element={<Cart />} />
                     <Route path="/ficheLogement/:id" element=
                     {
@@ -29,6 +30,7 @@ const Router = () => {
                 </Route>
                 
                 <Route element={<LayoutBlank />}>
+                    
                     <Route path="*" element={<Error404 />}/>
                 </Route>
 
