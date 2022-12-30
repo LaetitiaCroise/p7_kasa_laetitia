@@ -20,7 +20,7 @@ function Slideshow() {
         // j'excute avec useEffect le code une fois que le site va être charger 
         useEffect(() => { 
         data.map((house) => {  // je boucle ma data pour obtenir house 
-            if (house.id === id) { // je passe la conditions  si id de house est strctement egale à l'id de mon parametre Use params
+            if (house.id === id) { // je passe la conditions  si id de house est strictement egale à l'id de mon parametre Use params
             setLogement(house);// si c'est ok setLogement( useState) recupère toute les données de house
             }
             return null;
