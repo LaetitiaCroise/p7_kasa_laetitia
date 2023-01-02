@@ -23,7 +23,7 @@ function Cart() { // je crée ma function Cart qui retourne la section Gallery ,
                     <Link key={logement.id} to={`/ficheLogement/${logement.id}`}>
 
                         <div className="boxKey" 
-                        // le mets la propriété css pour que l'image (logement.cover) soit sur le même plan que le linear-gradient
+                        // le mets la propriété css dynamique pour que l'image (logement.cover) soit sur le même plan que le linear-gradient
                         style={{
                             backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
                             url(${(logement.cover)})`
