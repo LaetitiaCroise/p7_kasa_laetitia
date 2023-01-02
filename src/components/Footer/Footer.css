@@ -8,7 +8,7 @@
 }
 .logo_Kasa_Footer {
     filter: brightness(5);
-    width: 10%;
+    width: 180px;
     padding: 40px;
 }
 .kasa-footer-elem {
@@ -22,8 +22,5 @@
 @media (max-width: 499px){
     .kasa-Footer{
         margin-top: 0;
-    }
-    .logo_Kasa_Footer{
-        width: 60%;
     }
 }

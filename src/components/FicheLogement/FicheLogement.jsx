@@ -2,7 +2,6 @@ import data from "../../data/logement_data.json";
 import { useParams } from "react-router-dom";
 // j'importe React l'effet de bord et le Hook { usEffect, useState} dans React
 import React, { useEffect, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 import "./FicheLogement.css";
 import AccordionLogement from "./AccordionLogement";
 import Error from '../Error/Error';
@@ -46,10 +45,9 @@ function FicheLogement({ title, content }) {
     const logementHostPicture = logement.host.picture;
     const logementRating = logement.rating //quantité étoiles 
 
-    // pour chacun des equipement on affiche celui-ci dans un paragraphe // uuid: assigne un identifiant à chacun des composant 
-    let mapLogementEquipement = logementEquipments.map((loge) => (
-        <p className="pEquipementLogement" key={uuidv4()}>{loge}</p>
-    ))
+// map 1ist valeur et l'index qui retourne dont l'attribue key est list) revoie des équipements sur logement.equipement du logement en question [index] // 
+    let mapLogementEquipement = logementEquipments.map((list, index) => (
+        <p className="pEquipementLogement" key={list}>{logement.equipments[index]}</p>))
 
 ///--  return()  --///
     return (

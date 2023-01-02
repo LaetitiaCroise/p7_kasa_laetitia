@@ -60,7 +60,7 @@ function Slideshow() {
     <section className="sectionSlider">
       <div className="slider">
         {/* je boucle avec map sur les photos du logement pour afficher l'image avec l'index qui équivault à current */}
-        {logement.pictures.map((l, index) => {
+        {logement.pictures.map((list, index) => {
           return (
             <div
               className={index === current ? "slide active" : "slide"}

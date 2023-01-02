@@ -15,6 +15,7 @@
     color: white;
     font-size: 24px;
     height: 15px;
+    font-weight: 500;
 }
 
 .accordionTitle:hover,.active .accordionTitle {
@@ -42,7 +43,7 @@
     background: #f7f7f7;
     font-size: 18px;
     color: #FF6060;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .active {
@@ -99,6 +100,12 @@
 
     .active .accordionContent {
         font-size: 12px;
+    }
+    .AccordionLogement {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
     }
 
 }

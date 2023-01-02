@@ -1,5 +1,5 @@
 .infoLogementContainer {
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     max-width: 1440px;
     justify-content: space-between;
@@ -7,7 +7,7 @@
 }
 
 /* .equipments {
-    margin-top: -20px;
+    margin-top: 20px;
 } */
 
 /* .pEquipementLogement {
@@ -17,11 +17,14 @@
 .infoLogementContainer h1 {
     font-size: 36px;
     color: #FF6060;
+    font-weight: 500;
 }
 
 .infoLogementContainer h2 {
     font-size: 18px;
     color: #FF6060;
+    margin-top : 10px;
+    font-weight: 500;
 }
 
 .tagParagraphe {
@@ -35,6 +38,7 @@
     margin-right: 10px !important;
     margin: 0;
     padding: 0 10px;
+    font-weight: 500;
 }
 
 .tag {
@@ -93,7 +97,7 @@
 
     .infoLogementContainer {
     flex-direction: column;
-    margin: 0;
+    margin: 10px;
     }
 
     .infoLogementContainer h1 {

@@ -25,6 +25,9 @@
 .AccordionLogement div {
     border-radius: 10px;
 }
+.paragrapheAccordion{
+    min-height:100px;
+}
 
 /* RESPONSIVE */
 
