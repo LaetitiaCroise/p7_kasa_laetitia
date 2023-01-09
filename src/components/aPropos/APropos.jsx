@@ -34,3 +34,4 @@ function A_propos() {
 }
 
 export default A_propos;
+// composant clé qui est disponible par défaut par react qui va permetre de faire appraitre et dispraitre par une animation css  

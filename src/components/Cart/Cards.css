@@ -67,6 +67,7 @@
     display: flex;
     width: 100%;
     height: 220px;
+    /* padding: 95px; */
     background-position: center;
     object-fit: cover;
     justify-content: center;
@@ -87,6 +88,8 @@
 	.galleryImage {
 		background-color: white;
 		margin: 0;
+        padding-top: 15px;
+       
 	}
 
     .galleryImage a {
@@ -97,11 +100,14 @@
 
 	.sectionP p {
 		font-size:  22px;
-		height: 111px;
+		height: 120px;
 		margin: 0 auto;
+        border-radius: 11px;
+        padding: 45px 103px 45px 35px;
 	}
     .kasa-Body{
         width: 92%;
     }
+
 
 }
