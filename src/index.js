@@ -21,3 +21,5 @@ root.render(
 //Les appels ultérieurs utilisent l'algorithme de différenciation DOM de React pour des mises à jour efficaces.
  
 
+
+//  fichier index.js principal l'application va passer par l'index.js et va appeller l'ensemble du code de l'application

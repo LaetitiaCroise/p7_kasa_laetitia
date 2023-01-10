@@ -45,7 +45,7 @@ function FicheLogement({ title, content }) {
     const logementHostPicture = logement.host.picture;
     const logementRating = logement.rating //quantité étoiles 
 
-// map 1ist valeur et l'index qui retourne dont l'attribue key est l) revoie des équipements sur logement.equipement du logement en question [index] // 
+// map 1 valeur et l'index qui retourne dont l'attribue key est l) revoie des équipements sur logement.equipement du logement en question [index] // 
     let mapLogementEquipement = logementEquipments.map((l, index) => (
         <p className="pEquipementLogement" key={l}>{logement.equipments[index]}</p>))
 
