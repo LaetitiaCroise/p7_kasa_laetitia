@@ -30,12 +30,12 @@ function Slideshow() {
 
   ////////CURRENT-IMAGE//////////
 
-  const [current, setCurrent] = useState(0);
-  const length = logement.pictures.length;
+  const [current, setCurrent] = useState(0); // determine la position de la photo qui est affichée
+  const length = logement.pictures.length;  // determine la longeur du tableau d'image
 
-  //je prépare mes constantes pour que chaque onClick des chevrons nextSlide +1
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  // Lorsque je clique sur le buton image suivante , si je suis à  la fin du tableau d'image je repasse mon index à zero, sinon index = index actuel + 1 
+  const nextSlide = () => { 
+    setCurrent(current === length - 1 ? 0 : current + 1);  
   };
   //je prépare mes constantes pour que chaque onClick des chevrons prevSlide -1 pour le retour
   const prevSlide = () => {
@@ -46,10 +46,11 @@ function Slideshow() {
     return null;
   }
 
-  //variable chevronOrNot pour afficher ou non les chevrons et le compteur en fonction du nombre d'image
+  // par défaut les chevrons sont visibles avec la classe arrow 
   let chevronOrNot = "arrow";
   let slideNumberOrNot = "slideNumber";
 
+  // il n'y a qu'une seule image , les flèches seront masquées avec la classe maybeHide ( en remplacement de 'arrow')
   if (logement.pictures.length === 1) {
     chevronOrNot = "maybeHide";
     slideNumberOrNot = "maybeHide";
