@@ -14,10 +14,10 @@
 .kasa-footer-elem {
 	color: white;
 }
-@media (max-width: 799px),(min-width: 820px){
-    .kasa-Footer{
+@media (max-width: 799px){
+    /* .kasa-Footer{
         margin-top:230px;
-    }
+    } */
 }
 @media (max-width: 499px){
     .kasa-Footer{
