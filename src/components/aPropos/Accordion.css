@@ -46,14 +46,8 @@
     /* margin-bottom: 20px; */
 }
 
-.active {
-    margin: 0 5%;
-}
 
-.false {
-    height: 80px;
-    margin: 0 5%;
-}
+
 
 .active i {
     transition: 0.5s;
@@ -101,11 +95,6 @@
     .active .accordionContent {
         font-size: 12px;
     }
-    .AccordionLogement {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        
-    }
+  
 
 }

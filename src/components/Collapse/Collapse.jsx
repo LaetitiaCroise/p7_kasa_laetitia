@@ -1,10 +1,10 @@
-import './AccordionLogement.css'
+import './collapse.css'
 import { useState } from "react";
 import React from "react";
 const chevron = <i className="fa-solid fa-chevron-up"></i>;
 
 //je créé ma fonction Accordion_Logement et lui passe en paramètre title et content, qui sont défini dans FicheLogement.js
-function Accordion_Logement({ title, content }) {
+function Collapse({ title, content, about }) {
 
     //je créé une variable d'état 'isActive' associé avec setActive et avec userstate l'initialise à false
     const [isActive, setActive] = useState(false);
@@ -14,7 +14,7 @@ function Accordion_Logement({ title, content }) {
     setActive(!isActive);
     };
     return (
-    <div className={`AccordionLogement ${isActive && "active"}`}>
+    <div className={`${ about ? "about-collapse-container " : "collapse-container"  } ${isActive && "active"}`}>
         
         <div className="accordionTitle" onClick={handleToggle}> 
             {title} <div>{chevron}</div>
@@ -24,7 +24,7 @@ function Accordion_Logement({ title, content }) {
     );
 }
 
-export default Accordion_Logement;
+export default Collapse;
 
 // Il est important de préciser une valeur initiale dans votre state ça peut etre une string, un booléen, un tableau ou encore un objet avec plusieurs propriétés.
 // Sinon, elle sera undefined par défaut

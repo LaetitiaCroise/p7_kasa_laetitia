@@ -1,7 +1,7 @@
 .infoLogementContainer {
     margin: 30px auto;
     display: flex;
-    max-width: 1440px;
+    max-width: 1240px;
     justify-content: space-between;
     width: 95%;
 }
