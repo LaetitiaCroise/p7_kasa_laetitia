@@ -91,6 +91,7 @@
 
     .slideNumber {
         margin-top: 200px;
+        display: none;
     }
 
 }

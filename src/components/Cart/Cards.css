@@ -88,9 +88,12 @@
 	.galleryImage {
 		background-color: white;
 		margin: 0;
-        padding-top: 15px;
+        padding-top: 0;
        
 	}
+    .boxKey{
+        height: 223px;
+    }
 
     .galleryImage a {
 		width: 100%;
