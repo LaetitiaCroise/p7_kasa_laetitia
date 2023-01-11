@@ -11,7 +11,8 @@ function A_propos() {
   //  je recupere mes props { title , content} pour géré l'affichage de mes composant
   return (
     <React.Fragment>
-      <div className="aProposKasa"></div>
+      <div className="aProposKasa">
+    </div>
       <main className="accordions">
         <Collapse
           about={true}
