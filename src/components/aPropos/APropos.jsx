@@ -1,6 +1,4 @@
 import "./aPropos.css";
-
-
 import React from "react";
 import Collapse from "../Collapse/Collapse";
 

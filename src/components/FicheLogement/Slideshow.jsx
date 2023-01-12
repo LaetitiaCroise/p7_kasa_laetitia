@@ -29,8 +29,8 @@ function Slideshow() {
   
 
   ////////CURRENT-IMAGE//////////
-
-  const [current, setCurrent] = useState(0); // determine la position de la photo qui est affichée
+// get (current), set (setCurrent) pour set le states 
+  const [current, setCurrent] = useState(0); // syntaxe de destructuration qui determine la position de default value de la photo qui est affichée
   const length = logement.pictures.length;  // determine la longeur du tableau d'image
 
   // Lorsque je clique sur le buton image suivante , si je suis à  la fin du tableau d'image je repasse mon index à zero, sinon index = index actuel + 1 
