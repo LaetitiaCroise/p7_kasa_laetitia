@@ -1,18 +1,17 @@
 import "./aPropos.css";
-// import Accordion from "./Accordion";
+
 
 import React from "react";
 import Collapse from "../Collapse/Collapse";
 
 function A_propos() {
-  // je crée ma fonction qui va retournée des Fragments pour mon composant A_ProposKasa et accordions qui va me permettre
+  // je crée ma fonction qui va retournée des Fragments pour mon composant A_ProposKasa et Collapse qui va me permettre
   //de grouper une liste d'enfants sans ajouter de noeud supplémentaire dans le DOM
 
-  //  je recupere mes props { title , content} pour géré l'affichage de mes composant
+  //  je recupere mes props { title , content, about} pour géré l'affichage de mes composant
   return (
     <React.Fragment>
-      <div className="aProposKasa">
-    </div>
+      <div className="aProposKasa"></div>
       <main className="accordions">
         <Collapse
           about={true}

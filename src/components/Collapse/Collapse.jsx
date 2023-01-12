@@ -3,7 +3,7 @@ import { useState } from "react";
 import React from "react";
 const chevron = <i className="fa-solid fa-chevron-up"></i>;
 
-//je créé ma fonction Accordion_Logement et lui passe en paramètre title et content, qui sont défini dans FicheLogement.js
+//je créé ma fonction Accordion_Logement et lui passe en paramètre les props title, content, about qui sont défini dans FicheLogement.js
 function Collapse({ title, content, about }) {
 
     //je créé une variable d'état 'isActive' associé avec setActive et avec userstate l'initialise à false
