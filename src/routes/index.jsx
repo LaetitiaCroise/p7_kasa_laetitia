@@ -8,7 +8,7 @@ import Cart from "../components/Cart/Cards";
 import APropos from "../components/aPropos/APropos";
 import React from "react";
 
-// Découpage du router
+// Découpage du router () routes Accueil et route utilisateur
 const Router = () => {
   return (
     //  je gere le rendu avec BrowserRouter et Route pour l'affichage de mes differentes pages
