@@ -8,13 +8,14 @@ import Cart from "../components/Cart/Cards";
 import APropos from "../components/aPropos/APropos";
 import React from "react";
 
-// Découpage du router () routes Accueil et route utilisateur
+// Découpage du router () route Accueil et routes a propos
 const Router = () => {
   return (
     //  je gere le rendu avec BrowserRouter et Route pour l'affichage de mes differentes pages
     <BrowserRouter>
        
       <Routes>
+        {/* lorque je cliquerais sur LayoutDefault jirais sur le composant header definis dans layoutDefault */}
         <Route element={<LayoutDefault />}>
           <Route path="/" element={<Cart />} />
           <Route
