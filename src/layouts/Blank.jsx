@@ -19,3 +19,4 @@ export default LayoutError;
 
 // Outlet Cette bibliothèque fournit un composant de sortie de routeur qui modifie dynamiquement
 // le contenu en fonction de la route actuelle. Il s'agit d'un remplacement pratique pour la combinaison de et de composants de React Router <Switch>
+
