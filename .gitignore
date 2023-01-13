@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/components/FicheLogement/AccordionLogement.css
+src/components/FicheLogement/AccordionLogement.css
+src/components/FicheLogement/AccordionLogement.jsx
+*.css
