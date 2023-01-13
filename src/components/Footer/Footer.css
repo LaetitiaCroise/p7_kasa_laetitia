@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    margin-top: 20px;
 }
 .logo_Kasa_Footer {
     filter: brightness(5);
