@@ -64,10 +64,11 @@
     }
 
     .HeaderMenu {
-        width: 170px;
+        width: 197px;
         font-size: 18px;
         margin: 0;
         padding: 0;
+        text-transform: uppercase;
     }
 
     .HeaderMenu a {
