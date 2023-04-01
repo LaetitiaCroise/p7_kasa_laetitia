@@ -1,5 +1,5 @@
 * {
-    font-family: 'Montserrat';
+font-family: 'Montserrat', sans-serif;
 }
 
 .kasaBanner {
@@ -74,6 +74,7 @@
     .HeaderMenu a {
         width: 100%;
         height: 15px;
+        font-size: 15px;
     }
 
     .HeaderMenu a :hover {
