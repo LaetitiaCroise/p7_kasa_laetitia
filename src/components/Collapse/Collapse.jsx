@@ -1,6 +1,5 @@
 import './collapse.css'
 import { useState } from "react";
-import React from "react";
 const chevron = <i className="fa-solid fa-chevron-up"></i>;
 
 //je créé ma fonction Accordion_Logement et lui passe en paramètre les props title, content, about qui sont défini dans FicheLogement.js
