@@ -21,7 +21,6 @@
     justify-content: space-between;
     background: #FF6060;
     padding: 25px;
-    font-weight: bold;
     border-radius: 5px;
     color: white;
     font-size: 24px;
@@ -103,18 +102,10 @@
     }
 
     .collapse-container {
-        flex-direction: column;
-    }
-
-    .collapse-container  {
-        width: 90%;
-        margin: 0 5%
-    }
-
-    .collapse-container {
         width: 90%;
         margin: 0 5%;
         font-size: 12px;
+        flex-direction: column;
     }
 
     .active .accordionContent {
@@ -130,9 +121,6 @@
         
     }
 
-    .accordionTitle {
-        font-size: 13px;
-    }
 
     .false {
         height: 80px;
@@ -141,10 +129,6 @@
 
     .active {
         margin: 0 5%;
-    }
-
-    .Accordion {
-        flex-direction: column;
     }
 
     .Accordion .false {
@@ -158,41 +142,6 @@
         font-size: 12px;
     }
 
-    .active .accordionContent {
-        font-size: 12px;
-    }
-
-    .accordionTitle {
-        font-size: 13px;
-    }
-
-    .false {
-        height: 80px;
-        margin: 0 5%;
-    }
-
-    .active {
-        margin: 0 5%;
-    }
-
-    .Accordion {
-        flex-direction: column;
-    }
-
-    .Accordion .false {
-        width: 90%;
-        margin: 0 5%
-    }
-
-    .Accordion .active {
-        width: 90%;
-        margin: 0 5%;
-        font-size: 12px;
-    }
-
-    .active .accordionContent {
-        font-size: 12px;
-    }
 
      
 }
